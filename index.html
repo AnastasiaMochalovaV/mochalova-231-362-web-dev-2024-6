@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="styles/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторная работа по JavaScript</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Результаты работы функций на JavaScript</h1>
+
+        <h2>Возведение в степень</h2>
+        <input type="number" id="powX" min="0" class="input-field" placeholder="Введите число x" />
+        <input type="number" id="powN" min="1" class="input-field" placeholder="Введите степень n" />
+        <button onclick="calculatePow()" class="btn">Вычислить</button>
+        <p id="powResult"></p>
+
+        <h2>Наибольший общий делитель (НОД)</h2>
+        <input type="number" id="gcdA" min="0" class="input-field" placeholder="Введите число a" />
+        <input type="number" id="gcdB" min="0" class="input-field" placeholder="Введите число b" />
+        <button onclick="calculateGCD()" class="btn">Вычислить</button>
+        <p id="gcdResult"></p>
+
+        <h2>Наименьшая цифра</h2>
+        <input type="number" id="minDigitX" min="0" class="input-field" placeholder="Введите число x" />
+        <button onclick="findMinDigit()" class="btn">Найти наименьшую цифру</button>
+        <p id="minDigitResult"></p>
+
+        <h2>Склонение записей</h2>
+        <input type="number" id="recordsN" min="0" class="input-field" placeholder="Введите число записей" />
+        <button onclick="pluralizeRecords()" class="btn">Сформировать строку</button>
+        <p id="pluralResult"></p>
+
+        <h2>Число Фибоначчи</h2>
+        <input type="number" id="fibN" min="0" max="1000" class="input-field" placeholder="Введите число n" />
+        <button onclick="findFibonacci()" class="btn">Найти число Фибоначчи</button>
+        <p id="fibonacciResult"></p>
+    </div>
+</body>
+</html>
